@@ -7,10 +7,9 @@ import { mobile } from "../responsive";
 
 const Container = styled.div`
   height: 70px;
-  background-color: #ffffff;
-  border-bottom: 2px solid black;
-  ${mobile({ height: "50px" })}
   background-color: #131362;
+  border-bottom: 2px solid black;
+  ${mobile({ height: "60px" })}
 `;
 
 const Wrapper = styled.div`
@@ -30,7 +29,7 @@ const Left = styled.div`
 const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
-  color: #555;
+  color: #fff;
   margin-right: 10px;
   ${mobile({ display: "none" })}
 `;
@@ -40,8 +39,7 @@ const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   margin-left: 25px;
-  padding: 8px;
-  margin-right: 10px;
+  padding: 5px;
   border-radius: 5px;
   background-color: white;
 `;
@@ -49,7 +47,6 @@ const SearchContainer = styled.div`
 const Input = styled.input`
   border: none;
   outline: none;
-  ${mobile({ width: "50px" })}
 `;
 
 const Center = styled.div`
@@ -75,7 +72,7 @@ const MenuItem = styled.div`
   cursor: pointer;
   margin-left: 25px;
   position: relative;
-
+  color: #fff;
   &:last-child {
     margin-left: 0;
   }
@@ -95,7 +92,7 @@ const Button = styled.button`
   transition: all 0.3s ease;
   font-weight: bold;
   &:hover {
-    background-color: #0d8e82;
+    background-color: #0c312d;
   }
 
   ${mobile({ padding: "8px 16px" })}

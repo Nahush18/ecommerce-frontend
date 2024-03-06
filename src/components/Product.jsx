@@ -28,12 +28,13 @@ const Container = styled.div`
   align-items: center;
   background-color: #f5fbfd;
   position: relative;
-  overflow: hidden; /* added overflow property */
+  overflow: hidden;
+  perspective: 1000px; /* Added perspective for 3D effect */
   &:hover ${Info} {
     opacity: 1;
   }
   &:hover img {
-    transform: scale(1.1); /* added scale transform on hover */
+    transform: scale(1.1);
   }
 `
 
@@ -48,7 +49,7 @@ const Circle = styled.div`
 const Image = styled.img`
   height: 75%;
   z-index: 2;
-  transition: all 0.5s ease; /* added transition effect */
+  transition: all 0.5s ease;
 `
 
 const Icon = styled.div`
@@ -60,7 +61,7 @@ const Icon = styled.div`
   align-items: center;
   justify-content: center;
   margin: 10px;
-  transition: all 0.5s ease; /* added transition effect */
+  transition: all 0.5s ease;
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
